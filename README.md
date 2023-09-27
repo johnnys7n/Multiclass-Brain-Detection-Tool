@@ -27,7 +27,7 @@ For more information on myelin refer to this <a href='https://www.nationalmssoci
 There will be two parts to this project:
 
 ### 1. Modeling Portion: <a href='https://github.com/johnnys7n/DetectingBrainWhiteMatterChanges/tree/main/Modeling'>link</a>
-In this portion, I have compiled images from immunohistochemistry experiments (sample images in the `/sample_data` folder to see how the images look like) and decided to see if a image classification algorithm using deep learning convolutional neural network (specifically TensorFlow Hub's `mobilenet_v2_130_224`) can predict the structural changes and also predict the type of neurodegeneration. The modeling portion is still on its very early experiment phases and only got ~65% model accuracy. I am in the process of acquiring more data.  
+In this portion, I have compiled images from immunohistochemistry experiments (sample images in the `/sample_data` folder to see how the images look like, referenced from <a href='https://www.researchgate.net/figure/Normal-CNS-morphology-and-myelination-in-Dars-mice-A-and-B-Paraffin-embedded_fig5_309660386'>link</a>) and decided to see if a image classification algorithm using deep learning convolutional neural network (specifically TensorFlow Hub's `mobilenet_v2_130_224`) can predict the structural changes and also predict the type of neurodegeneration. The modeling portion is still on its very early experiment phases and only got ~65% model accuracy. I am in the process of acquiring more data.  
 
 For more information on the model here is a <a href='https://tfhub.dev/google/imagenet/mobilenet_v2_130_224/classification/5'>link!</a>
 	
