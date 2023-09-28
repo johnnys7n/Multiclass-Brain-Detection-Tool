@@ -38,7 +38,7 @@ For more information on the model here is a <a href='https://tfhub.dev/google/im
 	
 ### 2. Deployment Portion: <a href='https://github.com/johnnys7n/Multiclass-Brain-Detection-Tool/tree/main/app'>link</a>
 
-This section will be using Flask to deploy the model for testing. (Still under progress). The currently working app will only detect contour differences between two brain images using Scikit-image and OpenCV's contour analysis. This app does not integrate the model output yet and will be planning on doing so once the model achieves a certain level of classification accuracy. This portion was more so to see if a simple computer vision can detect regional changes in myelination that reflects the true changes in biological phenomena. 
+This section will be using Flask to deploy the model for testing. (Still under progress). The currently working app will only detect contour differences between two brain MRI images using Scikit-image and OpenCV's contour analysis. This app does not integrate the model output yet and will be planning on doing so once the model achieves a certain level of classification accuracy. This portion was more so to see if a simple computer vision can detect regional changes in myelination that reflects the true changes in biological phenomena. 
 
 <h2 align='center'>Instructions to Run App Locally<a name='3'></a></h2>
 
