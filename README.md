@@ -34,6 +34,8 @@ There will be two parts to this project:
 ### 1. Modeling Portion: <a href='https://github.com/johnnys7n/Multiclass-Brain-Detection-Tool/tree/main/Modeling'>link</a>
 In this portion, I have compiled images from a MRI dataset which contains MRI images from patients with varying levels of AD (no dementia to moderate dementia). Sample images are located in the `/sample_data` folder) Here I experiment with an image classification algorithm using deep learning convolutional neural network (specifically TensorFlow Hub's `efficientnet_v2_imagenet21k_b1`) can predict the structural changes and also predict the type of neurodegeneration. The modeling portion is still on its very early experiment phases and only got ~85% model accuracy. I am in the process of fine tuning the model along with testing other classifiers on TensorFlow Hub. The first model tested on the subset of training data is saved here.
 
+**Currently Doing**: Create a Saliency map to detect the pixel/feature importances during training. 
+
 For more information on the model here is a <a href='https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_b1/feature_vector/2'>link!</a>
 	
 ### 2. Deployment Portion: <a href='https://github.com/johnnys7n/Multiclass-Brain-Detection-Tool/tree/main/app'>link</a>
