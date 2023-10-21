@@ -34,7 +34,18 @@ There will be two parts to this project:
 ### 1. Modeling Portion: <a href='https://github.com/johnnys7n/Multiclass-Brain-Detection-Tool/tree/main/Modeling'>link</a>
 In this portion, I have compiled images from a MRI dataset which contains MRI images from patients with varying levels of AD (no dementia to moderate dementia). Sample images are located in the `/sample_data` folder) Here I experiment with an image classification algorithm using deep learning convolutional neural network (specifically TensorFlow Hub's `efficientnet_v2_imagenet21k_b1`) can predict the structural changes and also predict the type of neurodegeneration. The modeling portion is still on its very early experiment phases and only got ~85% model accuracy. I am in the process of fine tuning the model along with testing other classifiers on TensorFlow Hub. The first model tested on the subset of training data is saved here.
 
-**Currently Doing**: Create a Saliency map to detect the pixel/feature importances during training. 
+**Currently Doing**:
+
+1. Testing multiple transfer learning models (ResNet, MobileNet, EfficientNet, etc.) and optimize the parameters/optimizers/layers aligned with different input-image processing methods. (For example, testing models with MaxPooling2D and feeding darker contrast images vs inverting the images and using different Pooling methods)
+2. Experimenting with various data augmentation techniques to handle potential overfitting issues.
+3. Re-formating the data to binary classification problems and seeing if a `sigmoid` function works better thant a `softmax` implementation in the output layer.
+4. Test various discrimatory visualization techniques (such as saliency mapping, CAM, and Grad-CAM) to detect the pixel/feature importances during training and interpret the results of the test. 
+
+<p align="center">
+	<img src="https://www.mdpi.com/sensors/sensors-23-04543/article_deploy/html/images/sensors-23-04543-g011.png">
+</p>
+
+- Here is an example of the goal of this project! This saliency mapping image is taken from this <a href="https://www.mdpi.com/1424-8220/23/9/4543">article</a>.
 
 For more information on the model here is a <a href='https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_b1/feature_vector/2'>link!</a>
 	
